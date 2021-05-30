@@ -1,9 +1,580 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Diagnostics">
+    tools:context=".Diagnostics"
+    android:background="#fff">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Title of the page -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#dd4c1e"
+            android:text="DIAGNOSTICS"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:id="@+id/pageTitle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can provide the value of the following parameters and Autognosis will check the input values and will finally show what you need to do next."
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/pageTitle"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:id="@+id/introText"
+            />
+
+        <!--Start taking the user input-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_below="@id/introText"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rpmdetails"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="RPM Value             : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/rpm"
+                />
+
+            <EditText
+                android:id="@+id/rpmValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@id/rpm"
+                android:hint="enter the value"
+                android:lines="1"/>
+
+        </RelativeLayout>
+
+        <!--ECT  User Input-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_below="@id/rpmdetails"
+            android:id="@+id/ectdetails"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="ECT Value              : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ect"
+                />
+
+            <EditText
+                android:id="@+id/ectValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@id/ect"
+                android:hint="enter the value"
+                android:lines="1"/>
+
+        </RelativeLayout>
+
+        <!--Air Temp Input parameter value-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_below="@id/ectdetails"
+            android:id="@+id/airTempDetails"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="Air Temperaure    : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/airTemp"
+                />
+
+            <EditText
+                android:id="@+id/airTempValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@id/airTemp"
+                android:hint="enter the value"
+                android:lines="1"/>
+
+        </RelativeLayout>
+
+
+        <!--Claculated Load input value-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_below="@id/airTempDetails"
+            android:id="@+id/calculatedLoadDetails"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="Calculated Load   : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/calculatedLoad"
+                />
+
+            <EditText
+                android:id="@+id/calculatedLoadValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@id/calculatedLoad"
+                android:hint="enter the value"
+                android:lines="1"/>
+
+        </RelativeLayout>
+
+        <!--Throttle Position User Input Value-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_below="@id/calculatedLoadDetails"
+            android:id="@+id/throttlePositionDetails"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="Throttle Position  : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/throttlePosition"
+                />
+
+            <EditText
+                android:id="@+id/throttlePositionValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@id/throttlePosition"
+                android:hint="enter the value"
+                android:lines="1"/>
+
+        </RelativeLayout>
+
+        <!--Oxygen Value user input-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_below="@id/throttlePositionDetails"
+            android:id="@+id/oxygenValueDetails"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="Oxygen Value (*10)  : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/oxygenDetails"
+                />
+
+            <EditText
+                android:id="@+id/oxygenDetailsValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@id/oxygenDetails"
+                android:hint="enter the value"
+                android:lines="1" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnose"
+            android:textColor="@color/white"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="45dp"
+            android:id="@+id/diagnoseButton"
+            android:textSize="20dp"
+            android:layout_below="@id/oxygenValueDetails"
+            android:background="#dd4c1e"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:onClick="Diagnose"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/finalResult"
+            android:layout_below="@id/diagnoseButton"
+            android:textSize="30dp"
+            android:hint=""
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="40dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Evaluation"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:id="@+id/evaluationText"
+            android:layout_below="@id/finalResult"
+            android:layout_centerHorizontal="true"
+            android:background="#dd4c1e"
+            android:textAlignment="center"
+            android:outlineAmbientShadowColor="@color/white"
+            android:paddingVertical="10dp"
+            android:gravity="center_horizontal" />
+
+        <!--Individual Analysis -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/rpmresultdetails"
+            android:layout_below="@id/evaluationText">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="RPM             : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/rpmResult"
+                />
+
+            <TextView
+                android:id="@+id/rpmResultValue"
+                android:layout_toRightOf="@id/rpmResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:lines="1"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/ectvaluedetails"
+            android:layout_below="@id/rpmresultdetails">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="ECT              : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ectvalue"
+                />
+
+            <TextView
+                android:id="@+id/ectvalueResult"
+                android:layout_toRightOf="@id/ectvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:lines="1"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+
+        <!--air temp result-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/airtempdetails"
+            android:layout_below="@id/ectvaluedetails">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="Air Temperature   : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/airtempreuslt"
+                />
+
+            <TextView
+                android:id="@+id/airtempreusltValue"
+                android:layout_toRightOf="@id/airtempreuslt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:lines="1"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+
+        <!--Calculated Load Result -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/calculatedloadresult"
+            android:layout_below="@id/airtempdetails">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="Calculated Load   : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/calculatedloadresulttext"
+                />
+
+            <TextView
+                android:id="@+id/calculatedLoadResult"
+                android:layout_toRightOf="@id/calculatedloadresulttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:lines="1"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+
+        <!--Throttle Position Final Result-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/throttlepositionresult"
+            android:layout_below="@id/calculatedloadresult">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="Throttle Position   : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/throttlePositionText"
+                />
+
+            <TextView
+                android:id="@+id/throttlePositionResult"
+                android:layout_toRightOf="@id/throttlePositionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:lines="1"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+
+        <!--Oxygen Value Result-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/oxygenvalueresult"
+            android:layout_below="@id/throttlepositionresult">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text="Oxygen Value   : "
+                android:textColor="#515151"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/oxygenvalueresulttext"
+                />
+
+            <TextView
+                android:id="@+id/oxygenValueResult"
+                android:layout_toRightOf="@id/oxygenvalueresulttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:lines="1"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

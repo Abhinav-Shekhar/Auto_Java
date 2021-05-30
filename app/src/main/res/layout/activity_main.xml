@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,114 +9,93 @@
     >
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="#dd4c1e"
+        android:text="AUTOGNOSIS"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="50dp"
         >
 
-
-        <TextView
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/firstbutton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:background="#dd4c1e"
-            android:text="AUTOGNOSIS"
+            android:background="#DD4C1E"
+            android:paddingHorizontal="20dp"
+            android:text="Connections"
+            android:textColor="#fff"
+            android:textSize="17dp"
             android:layout_gravity="center"
-            android:textSize="25dp"
-            android:textAlignment="center"
-            android:textColor="#000"
 
+            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="15dp"
             />
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+        <Button
+            android:id="@+id/secondbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:paddingBottom="50dp"
-                >
-
-                <Button
-                    android:id="@+id/firstbutton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#DD4C1E"
-                    android:paddingHorizontal="20dp"
-                    android:text="Connections"
-                    android:textColor="#fff"
-                    android:textSize="17dp"
-                    android:layout_weight="1"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginHorizontal="15dp"
-                    />
-
-                <Button
-                    android:id="@+id/secondbutton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="#DD4C1E"
-                    android:paddingHorizontal="20dp"
-                    android:text="Diagnostics"
-                    android:textColor="#fff"
-                    android:layout_weight="1"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginHorizontal="15dp"
-                    android:textSize="17dp" />
+            android:background="#DD4C1E"
+            android:paddingHorizontal="20dp"
+            android:text="Diagnostics"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:textSize="17dp" />
 
 
-            </LinearLayout>
+    </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:paddingTop="100dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="100dp">
 
-                <Button
-                    android:id="@+id/thirdbutton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#DD4C1E"
-                    android:paddingHorizontal="20dp"
-                    android:text="Measures"
-                    android:textColor="#fff"
-                    android:textSize="17dp"
-                    android:layout_weight="1"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginHorizontal="15dp"
-                    />
+        <Button
+            android:id="@+id/thirdbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#DD4C1E"
+            android:paddingHorizontal="20dp"
+            android:text="Measures"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:layout_gravity="center"
 
-                <Button
-                    android:id="@+id/fourthbutton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="#DD4C1E"
-                    android:paddingHorizontal="20dp"
-                    android:text="Settings"
-                    android:textColor="#fff"
-                    android:layout_weight="1"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginHorizontal="15dp"
-                    android:textSize="17dp" />
+            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="15dp"
+            />
 
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-
-
+        <Button
+            android:id="@+id/fourthbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#DD4C1E"
+            android:paddingHorizontal="20dp"
+            android:text="Settings"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:textSize="17dp" />
 
 
     </LinearLayout>
@@ -124,4 +103,4 @@
 
 
 
-</ScrollView>
+</RelativeLayout>
