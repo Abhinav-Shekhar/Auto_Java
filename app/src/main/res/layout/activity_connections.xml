@@ -23,6 +23,7 @@
            android:textSize="25dp"
            android:textAlignment="center"
            android:textColor="#fff"
+           android:fontFamily="@font/bungee"
            android:id="@+id/pageTitle"
            />
 

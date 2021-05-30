@@ -36,7 +36,6 @@ public class Settings extends AppCompatActivity {
         //code for contact the developer button
         Button contactButton = (Button) findViewById(R.id.contactDev);
         contactButton.setOnClickListener(v -> {
-
             String url = "mailto:ashikap2416@gmail.com";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
@@ -47,7 +46,6 @@ public class Settings extends AppCompatActivity {
         //code for the website button
         Button websiteButton = (Button) findViewById(R.id.website);
         websiteButton.setOnClickListener(v -> {
-
             String url = "https://Abhinav-Shekhar.github.io";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));

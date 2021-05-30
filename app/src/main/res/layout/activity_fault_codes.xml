@@ -19,6 +19,7 @@
             android:padding="15dp"
             android:background="#dd4c1e"
             android:text="Fault Codes"
+            android:fontFamily="@font/bungee"
             android:layout_gravity="center"
             android:textSize="25dp"
             android:textAlignment="center"
@@ -98,8 +99,6 @@
             android:src="@drawable/faultcodes"
             android:layout_marginHorizontal="10dp"
             />
-
-
 
     </LinearLayout>
 

@@ -18,6 +18,7 @@
             android:padding="15dp"
             android:background="#dd4c1e"
             android:text="MEASURES"
+            android:fontFamily="@font/bungee"
             android:layout_gravity="center"
             android:textSize="25dp"
             android:textAlignment="center"

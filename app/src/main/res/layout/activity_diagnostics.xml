@@ -18,6 +18,7 @@
             android:padding="15dp"
             android:background="#dd4c1e"
             android:text="DIAGNOSTICS"
+            android:fontFamily="@font/bungee"
             android:layout_gravity="center"
             android:textSize="25dp"
             android:textAlignment="center"
@@ -309,7 +310,7 @@
             android:id="@+id/finalResult"
             android:layout_below="@id/diagnoseButton"
             android:textSize="30dp"
-            android:hint=""
+            android:textColor="@color/black"
             android:layout_centerHorizontal="true"
             android:layout_marginVertical="40dp"
             />
