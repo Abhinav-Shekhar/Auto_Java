@@ -168,6 +168,19 @@
             android:layout_marginHorizontal="10dp"
             />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Fault Codes"
+            android:background="#dd4c1e"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:paddingVertical="10dp"
+            android:id="@+id/faultCodes"
+            />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -208,6 +221,8 @@
             android:layout_marginBottom="15dp"
             android:layout_marginHorizontal="10dp"
             />
+
+
 
     </LinearLayout>
 

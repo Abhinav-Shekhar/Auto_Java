@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaultCodes"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Title of the page -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#dd4c1e"
+            android:text="Fault Codes"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:id="@+id/pageTitle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• P0654 : Revolutions Per Minute"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="20dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• P0113 : Intake Air Temperature"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="20dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• P0118 : Engine Coolant Temperature"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="20dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• P0122 : Throttle Position"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="20dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• P0131 : Oxygen Sensor Value"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="20dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• PID-04 : Calculated Load"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="20dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/faultcodes"
+            android:layout_marginHorizontal="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
