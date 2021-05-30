@@ -73,6 +73,7 @@
                 android:layout_marginRight="25dp"
                 android:layout_toRightOf="@id/rpm"
                 android:hint="enter the value"
+                android:textColor="@color/black"
                 android:lines="1"/>
 
         </RelativeLayout>
@@ -113,6 +114,7 @@
                 android:layout_marginRight="25dp"
                 android:layout_toRightOf="@id/ect"
                 android:hint="enter the value"
+                android:textColor="@color/black"
                 android:lines="1"/>
 
         </RelativeLayout>
@@ -153,6 +155,7 @@
                 android:layout_marginRight="25dp"
                 android:layout_toRightOf="@id/airTemp"
                 android:hint="enter the value"
+                android:textColor="@color/black"
                 android:lines="1"/>
 
         </RelativeLayout>
@@ -185,6 +188,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:id="@+id/calculatedLoad"
+
                 />
 
             <EditText
@@ -194,6 +198,7 @@
                 android:layout_marginRight="25dp"
                 android:layout_toRightOf="@id/calculatedLoad"
                 android:hint="enter the value"
+                android:textColor="@color/black"
                 android:lines="1"/>
 
         </RelativeLayout>
@@ -234,6 +239,7 @@
                 android:layout_marginRight="25dp"
                 android:layout_toRightOf="@id/throttlePosition"
                 android:hint="enter the value"
+                android:textColor="@color/black"
                 android:lines="1"/>
 
         </RelativeLayout>
@@ -258,7 +264,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:paddingBottom="5dp"
-                android:text="Oxygen Value (*10)  : "
+                android:text="Oxygen Value (1-10)  : "
                 android:textColor="#515151"
                 android:textStyle="bold"
                 android:textSize="15dp"
@@ -275,6 +281,7 @@
                 android:layout_marginRight="25dp"
                 android:layout_toRightOf="@id/oxygenDetails"
                 android:hint="enter the value"
+                android:textColor="@color/black"
                 android:lines="1" />
 
         </RelativeLayout>
@@ -340,7 +347,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:paddingBottom="5dp"
-                android:text="RPM             : "
+                android:text="RPM                        : "
                 android:textColor="#515151"
                 android:textStyle="bold"
                 android:textSize="15dp"
@@ -380,7 +387,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:paddingBottom="5dp"
-                android:text="ECT              : "
+                android:text="ECT                         : "
                 android:textColor="#515151"
                 android:textStyle="bold"
                 android:textSize="15dp"
@@ -464,7 +471,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:paddingBottom="5dp"
-                android:text="Calculated Load   : "
+                android:text="Calculated Load    : "
                 android:textColor="#515151"
                 android:textStyle="bold"
                 android:textSize="15dp"
@@ -548,7 +555,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:paddingBottom="5dp"
-                android:text="Oxygen Value   : "
+                android:text="Oxygen Value         : "
                 android:textColor="#515151"
                 android:textStyle="bold"
                 android:textSize="15dp"

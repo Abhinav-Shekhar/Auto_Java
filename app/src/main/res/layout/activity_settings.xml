@@ -1,9 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Settings">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Title of the page -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#dd4c1e"
+            android:text="SETTINGS"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:id="@+id/pageTitle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autognosis is a mobile application based tool, using which you can analyze the performance of your vehicle, as well dignose the issue, of there is any issue with the vehicle."
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="20dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you're facing any issues with the app or want to get any more information regarding the details provided by Autognosis, please feel free to reach out to us. You can also check out our website to know mroe details about Autognosis, and to check out the upcoming features of the app."
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="20dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Developer"
+            android:background="#dd4c1e"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:paddingVertical="10dp"
+            android:id="@+id/contactDev"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visit Website"
+            android:background="#dd4c1e"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:paddingVertical="10dp"
+            android:id="@+id/website"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/carimage"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,9 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Measures">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Title of the page -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#dd4c1e"
+            android:text="MEASURES"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:id="@+id/pageTitle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autognosis mainly takes in six parameters to identify whether there is any issue with your vehicle. Here are the parameters which we take in the corresponding details for each of them : "
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="20dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Revolutions Per Minute"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Revolutions Per Minute or RPM is the number of cycles completed by the engine's crankshaft per minute. The normal RPM value of a vehicle, when in idle mode is usually in the range of 750 to 900"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="17dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engine Coolant Temperature"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engine Coolant Temperature or ECT deals with the temperature of the engine coolant used in the vehicle. The normal value of the Engine Coolant Temperature lies in the range of 20 to 40 degree celcius."
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="17dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air Temperature"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Air Temperature is yet another factor which is associated with the working of engines in the vehicles. It's usually controlled by coolants, proper air ventillation system, etc. The normal value of the Air Temperature will be less than 23 degree celcius."
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="17dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculated Load"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculated Load is one of the parameter which deals with the amount of load which the engine can work with without causing any troubles. The avaerage value of the Calculated Load ranges between 20 and 40."
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="17dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Throttle Position"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Throttle Value is one of the main parameter, which deals with the amount of air and fuel entering the engine. If the working is not normal, it will effect the efficiency of the engine. The normal Throttle Value will be less than 7."
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="17dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oxygen Value"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It deals with the fuel mixture which may or may not cause complete combustion. If the combustion residue is low, the Oxygen Sensor Value will be as high as 0.9 and can go down to 0.1 if the mixture is lean. Autignosis converts this value requires the value to be entered as an integer. You have to multiple the sensor value with 10 and input the result for diagnosis (0.8 ~ 8)."
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="17dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTE : "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please feel free to reach out to us to get to know more details about the various paramaters which can effect the performance of an engine in a vehicle. Contact details are available in the Developers section."
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="17dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/takecare"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autognosis is trying hard to help solve the excessive pollution caused by vehicles. We urge you to check your vehicle performance regularly and fix the problems, if there are any. Together, let's make this a better place to leave for all of us!"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:textSize="17dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

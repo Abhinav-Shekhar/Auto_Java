@@ -2,6 +2,7 @@ package com.android.auto_java;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.graphics.Color;
 import android.os.Build;
@@ -21,6 +22,10 @@ public class Diagnostics extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //turn off dark mode
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagnostics);
 
@@ -68,7 +73,7 @@ public class Diagnostics extends AppCompatActivity {
 
 
         //Diagnose Condition
-        if((finalRPM >= 750 && finalRPM <= 900) && (finalCalculatedString >= 20 && finalCalculatedString <= 40) && (finalECT <= 49) && (finalairTemp <= 23) && (finalThrottlePosition <= 7) && (finalOxygenDetails <= 1) ){
+        if((finalRPM >= 750 && finalRPM <= 900) && (finalCalculatedString >= 20 && finalCalculatedString <= 40) && (finalECT <= 49) && (finalairTemp <= 23) && (finalThrottlePosition <= 7) && (finalOxygenDetails <= 9 && finalOxygenDetails >= 4) ){
             finalResult.setText("No Issues Found");
         }
         else{
@@ -125,11 +130,11 @@ public class Diagnostics extends AppCompatActivity {
             throttlePositionResult.setText("Issues Found, Value is high");
         }
 
-        if(finalOxygenDetails <= 1){
+        if(finalOxygenDetails <= 9 && finalOxygenDetails >= 4){
             oxygenValueResult.setText("Normal");
         }
         else{
-            oxygenValueResult.setText("Issues Found, Value is high");
+            oxygenValueResult.setText("Issues Found, Value is low");
         }
 
 
