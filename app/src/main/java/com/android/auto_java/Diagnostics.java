@@ -133,8 +133,11 @@ public class Diagnostics extends AppCompatActivity {
         if(finalOxygenDetails <= 9 && finalOxygenDetails >= 4){
             oxygenValueResult.setText("Normal");
         }
-        else{
+        else if(finalOxygenDetails < 4){
             oxygenValueResult.setText("Issues Found, Value is low");
+        }
+        else{
+            oxygenValueResult.setText("Issues found, value is high");
         }
 
     }
