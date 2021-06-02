@@ -31,29 +31,35 @@
 
         <Button
             android:text="ON/OFF"
+            android:textSize="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
-            android:layout_marginHorizontal="9dp"
+            android:layout_marginHorizontal="1dp"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:id="@+id/btnONOFF"/>
 
         <Button
             android:text="Enable Discoverable"
+            android:textSize="13dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnDiscoverable_on_off"
             android:onClick="btnEnableDisable_Discoverable"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:layout_marginVertical="10dp"
-            android:layout_marginHorizontal="9dp"/>
+            android:layout_marginHorizontal="1dp"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnFindUnpairedDevices"
             android:text="Discover"
+            android:textSize="13dp"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:onClick="btnDiscover"/>
 
 

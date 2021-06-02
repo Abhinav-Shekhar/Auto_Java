@@ -19,7 +19,6 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import androidx.appcompat.app.AppCompatActivity;
 
 
 public class Connections extends AppCompatActivity implements AdapterView.OnItemClickListener{

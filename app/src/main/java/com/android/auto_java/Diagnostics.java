@@ -137,7 +137,7 @@ public class Diagnostics extends AppCompatActivity {
             oxygenValueResult.setText("Issues Found, Value is low");
         }
         else{
-            oxygenValueResult.setText("Issues found, value is high");
+            oxygenValueResult.setText("Issues found, Value is high");
         }
 
     }
